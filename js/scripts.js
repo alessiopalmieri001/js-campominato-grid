@@ -1,15 +1,21 @@
 //mi seleziono il bottone 
-const bPlay = document.getElementById('gioca')
+const bPlay = document.getElementById('gioca');
 console.log(bPlay);
 //mi seleziono div con la classe container 
-const grid = document.querySelector('.container')
+const grid = document.querySelector('.container');
 console.log(grid);
+
+
+
+
 
 // creo un evento al click che mi aggiunge 100 celle con i numeri  da 1 a 100
 bPlay.addEventListener('click', function(){
+        let difficoltà = parseInt(document.getElementById('difficoltà').value);
+        console.log(difficoltà);
         grid.innerHTML = "";
         //creo un ciclo definito per avere dei numeri da 1 a 100
-        for(i = 1; i <= 100; i++){
+        for(i = 1; i <= difficoltà; i++){
         //creo un tag e lo metto in una variabile
         let cella = document.createElement('div');
         //al tag dellA VARIABILE  aggiungo una classe 
