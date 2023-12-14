@@ -19,7 +19,7 @@ bPlay.addEventListener('click', function(){
         //creo un tag e lo metto in una variabile
         let cella = document.createElement('div');
         //al tag dellA VARIABILE  aggiungo una classe 
-        cella.classList.add('cella');
+        cella.classList.add('cella', 'cell-' + difficoltà);
         //cosi aggiungo dentro le celle i numeri che mi escono 
         cella.append(i);
         

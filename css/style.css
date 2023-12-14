@@ -30,8 +30,6 @@ header > div{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10%;
-    height: 100px;
     background-color: #7fffd4 ;
     border: 1px solid black;
 }
@@ -40,4 +38,17 @@ header > div{
 
     background-color: blue;
 
+}
+.container > .cella.cell-100{
+    width: 100px;
+    height: 100px;
+
+}
+.container > .cella.cell-81{
+    width: calc(1000px / 9);
+    height: calc(1000px / 9);
+}
+.container > .cella.cell-49{
+    width: calc(1000px / 7);
+    height: calc(1000px / 7);
 }
